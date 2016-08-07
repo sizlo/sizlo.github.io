@@ -1,0 +1,55 @@
+body
+{
+  background-image: url('../image/face.gif');
+  background-repeat: repeat;
+  margin: 0%;
+  padding: 0%;
+}
+
+h1
+{
+  color: #00ff00;
+  font-family: "Comic Sans MS";
+}
+
+/* Hide links in the header */
+h1 a
+{
+  text-decoration: none;
+  color: #00ff00;
+  cursor: default;
+}
+
+audio
+{
+  display: none;
+}
+
+video
+{
+  position: absolute;
+  float: left;
+  width: 320px;
+  height: 180px;
+  display: none;
+}
+
+/* A 100*100 square that reveals the image inside it on hover */
+.hoverPic
+{
+  position: absolute;
+  float: left;
+  width: 100px;
+  height: 100px;
+}
+
+.hoverPic img
+{
+  display: none;
+  width: 100px;
+}
+
+.hoverPic:hover img
+{
+  display: block;
+}

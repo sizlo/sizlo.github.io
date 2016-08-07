@@ -1,0 +1,94 @@
+<!-- I don't know why I did this -->
+<html>
+  <head>
+    <title>Tim Brier</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <script src="../js/konami.js"></script>
+    
+    <script type="text/javascript">
+      function toggleSound()
+      {
+        var playa = document.getElementById("tunez");
+        
+        if (playa.paused)
+          playa.play();
+        else
+          playa.pause();
+      }
+      
+      function toggleVideo()
+      {
+        var vidya = document.getElementById("flickz");
+        
+        if (vidya.paused)
+          vidya.play();
+        else
+          vidya.pause();
+      }
+      
+      function randomizeElementPosition(el)
+      {
+        var height = window.innerHeight - el.offsetHeight;
+        var width = window.innerWidth - el.offsetWidth;
+
+        var x = Math.floor(Math.random() * width);
+        var y = Math.floor(Math.random() * height);
+
+        el.style.left = x;
+        el.style.top = y;
+      }
+
+      function activateVideo()
+      {
+        // Stop music
+        var musicPlayer = document.getElementById("tunez");
+        musicPlayer.pause();
+
+        var videoPlayer = document.getElementById("flickz");
+
+        // Randomize video position
+        videoPlayer.style.display = "block";
+        randomizeElementPosition(videoPlayer);
+          
+        // Start video
+        videoPlayer.play();
+      }
+
+      document.onkeydown = function (e)
+      {
+        if (updateAndCheckKonamiCode(e.keyCode))
+        {
+          activateVideo();
+        }
+      }
+
+      function init()
+      {
+        // Randomize woll position
+        randomizeElementPosition(document.getElementById("woll"));
+      }
+
+    </script>
+  </head>
+  
+  <body onload="init()">
+    <audio id="tunez" autoplay loop>
+      <source src="../audio/greenhillzone.mp3" type="audio/mpeg">
+      oh noes, it broked
+    </audio>
+    
+    <h1>
+      <marquee behavior="alternate" direction="right" scrollamount="50">
+        <a onclick="toggleSound()" href="#">i internet gud?</a>
+      </marquee>
+    </h1>
+
+    <video onclick="toggleVideo()" id="flickz" preload loop>
+      <source src="../video/caecilius.mp4" type="video/mp4">
+      <source src="../video/caecilius.webm" type="video/webm">
+    </video>
+    
+    <div class="hoverPic" id="woll"><img src="../image/woll.gif" /></div>
+  </body>
+</html>
