@@ -1,0 +1,33 @@
+*
+{
+    margin: 0;
+}
+
+html, body
+{
+    height: 100%;
+}
+
+.main
+{
+    min-height: 100%;
+    /* equal to footer height */
+    margin-bottom: -20px; 
+}
+
+.main:after
+{
+    content: "";
+    display: block;
+}
+
+.secret, .main:after
+{
+    height: 20px; 
+}
+
+.secret a
+{
+    color: gainsboro; /* Slightly visible grey */
+    text-decoration: none;
+}
