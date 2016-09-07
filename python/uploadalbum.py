@@ -39,6 +39,10 @@ def parseAlbumData(path):
     
 
 def uploadImage(client, imageData):
+    if not os.path.isfile(imageData["path"]):
+        print "Cannot find file " + path
+        print "Skipping upload"
+        return None
     image = client.upload_from_path(imageData["path"], config=imageData, anon=False)
     print "Uploaded " + image["link"]
     return image
