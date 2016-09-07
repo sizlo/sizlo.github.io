@@ -1,0 +1,33 @@
+.albumintro
+{
+    margin-bottom: 10px;
+}
+
+.albumintro img
+{
+    max-width: 800px;
+}
+
+.album .image 
+{
+    clear: left;
+    overflow: auto;
+    margin-bottom: 10px;
+}
+
+.album .image img
+{
+    max-width: 400px;
+    float: left;
+}
+
+.album .image p
+{
+    overflow: hidden;
+}
+
+.album .image h2
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
