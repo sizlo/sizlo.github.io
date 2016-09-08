@@ -1,0 +1,73 @@
+{
+    "title": "Workbench",
+    "description": "A workbench I made mostly following the design from woodgears.ca.",
+    "privacy": "public",
+    "coverimagepath": "image01.jpg",
+    "images": 
+    [
+        {
+            "description": "Finished product first.",
+            "path": "image01.jpg"
+        },
+        {
+            "description": "I used a series of circulaw saw cuts to cut the dados for the legs in the aprons.",
+            "path": "image02.jpg"
+        },
+        {
+            "description": "Dados cleaned up using a chisel.",
+            "path": "image03.jpg"
+        },
+        {
+            "description": "Testing the fit. One was a perfect fit but the other three had a bit of wobble, they seemed good enough though.",
+            "path": "image04.jpg"
+        },
+        {
+            "description": "Seeing how everything will eventually look.",
+            "path": "image05.jpg"
+        },
+        {
+            "description": "The leg frames were going to be held together with dowels and screws, this was me testing out drilling holes and driving screws on scrap pieces. I'm glad I did this because you can see how messy my first attempt was.",
+            "path": "image06.jpg"
+        },
+        {
+            "description": "After watching a youtube video about how to actually use a drill I got much better results.",
+            "path": "image07.jpg"
+        },
+        {
+            "description": "Putting the leg frames together I made a measuring error, it's a good thing I'd not glued the dowel in yet.",
+            "path": "image08.jpg"
+        },
+        {
+            "description": "Fixed.",
+            "path": "image09.jpg"
+        },
+        {
+            "description": "Leg frames complete.",
+            "path": "image10.jpg"
+        },
+        {
+            "description": "Starting to look more like a workbench now. The aprons are just attached with screws, not glued, so it can be disassembled.",
+            "path": "image11.jpg"
+        },
+        {
+            "description": "The worktop is just 2 sheets of chipboard glued together. It's screwed into blocks of wood that were glued to the inside of the aprons.",
+            "path": "image12.jpg"
+        },
+        {
+            "description": "Added a shelf. I should have added this before the worktop, I had to make the corner cutouts longer than necessary to be able to maneuver it into place.",
+            "path": "image13.jpg"
+        },
+        {
+            "description": "Fitted the vise. I got this vise in a sorry rusted up state for £10 on gumtree and cleaned it up. The quick-release mechanism does work but it's quite stiff, I'm going to try using paraffin wax to lube it to see if that's any better than the 3 in 1 oil it currently has. The vise is attached from the under side with lag screws through a mess of shims and then into the worktop.",
+            "path": "image14.jpg"
+        },
+        {
+            "description": "Added a tool rail from the leftover dowel I had.",
+            "path": "image15.jpg"
+        },
+        {
+            "description": "I had some trouble with wobble when I was done, but the uneven garage floor didn't help. In the right spot it's pretty stable and when there's stuff on the shelf weighing it down it's rock solid.",
+            "path": "image16.jpg"
+        }
+    ]
+}
