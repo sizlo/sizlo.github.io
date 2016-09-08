@@ -33,6 +33,7 @@ def generateAlbumPage(path):
   <head>
     <title>""" + albumData["title"] + """</title>
     <link rel="stylesheet" type="text/css" href="../../css/buildalbum.css">
+    <meta charset="utf-8" />
   </head>
 
   <body>
