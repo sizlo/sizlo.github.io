@@ -2,6 +2,9 @@ import parsealbumfolder
 import sys
 import os
 
+def getImageHtml(path):
+    return "<a href=\"" + path + "\"><img src=\"" + path + "\" title=\"Click for full size\" /></a>"
+
 def generateAlbumPage(path):
     albumData = parsealbumfolder.parseAlbumFolder(path)
     if albumData == None:
@@ -19,7 +22,7 @@ def generateAlbumPage(path):
             imageDescriptionHtml = "<p>" + imageData["description"] + "</p>"
         imageListHtml += """
       <div class="image">
-        <img src=\"""" + imageData["path"] + """" />
+        """ + getImageHtml(imageData["path"]) + """
         """ + imageTitleHtml + """
         """ + imageDescriptionHtml + """
       </div>
@@ -36,7 +39,7 @@ def generateAlbumPage(path):
     <div class="albumintro">
       <h1>""" + albumData["title"] + """</h1>
       <p>""" + albumData["description"] + """</p>
-      <img src=\"""" + albumData["coverimagepath"] + """" />
+      """ + getImageHtml(albumData["coverimagepath"]) + """
     </div>
 
     <div class="album">
