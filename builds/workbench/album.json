@@ -1,6 +1,6 @@
 {
     "title": "Workbench",
-    "description": "A workbench I made mostly following the design from woodgears.ca.",
+    "description": "My first woodworking project. A workbench with a vise based on the design at https://woodgears.ca/workbench/",
     "privacy": "public",
     "coverimagepath": "image01.jpg",
     "images": 
@@ -26,7 +26,7 @@
             "path": "image05.jpg"
         },
         {
-            "description": "The leg frames were going to be held together with dowels and screws, this was me testing out drilling holes and driving screws on scrap pieces. I'm glad I did this because you can see how messy my first attempt was.",
+            "description": "The leg frames are held together with dowels and screws, this was me testing out drilling holes and driving screws on scrap pieces. I'm glad I did this because you can see how messy my first attempt was.",
             "path": "image06.jpg"
         },
         {
