@@ -19,15 +19,17 @@
 {
     max-width: 400px;
     float: left;
+    margin-right: 10px;
 }
 
 .album .image p
 {
     overflow: hidden;
+    margin-top: 0px;
 }
 
 .album .image h2
 {
     margin-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
 }
