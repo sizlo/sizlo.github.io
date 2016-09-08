@@ -35,6 +35,15 @@ def parseAlbumData(path):
         print "Problem parsing folder " + path
         print "Exitting"
         sys.exit(0)
+
+    # Paths stored in json for images are relative to path
+    # Fix them up here
+    index = 0
+    for imageData in albumData["images"]:
+        fullImagePath = path + "/" + imageData["path"]
+        albumData["images"][index]["path"] = fullImagePath
+        index += 1
+
     return albumData
     
 
