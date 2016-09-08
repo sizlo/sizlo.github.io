@@ -1,5 +1,18 @@
 {
     "title": "albumtitle",
     "description": "albumdescription",
-    "privacy": "public"
+    "privacy": "public",
+    "images": 
+    [
+    	{
+		    "title": "001title",
+		    "description": "001description",
+		    "path": "image001.png"
+		},
+		{
+		    "title": "002title",
+		    "description": "002description",
+		    "path": "image002.png"
+		}
+    ]
 }
