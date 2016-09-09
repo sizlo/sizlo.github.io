@@ -11,6 +11,7 @@ html, body
 .main
 {
     min-height: 100%;
+    margin-left: 10px;
     /* equal to footer height */
     margin-bottom: -20px; 
 }
@@ -30,4 +31,21 @@ html, body
 {
     color: gainsboro; /* Slightly visible grey */
     text-decoration: none;
+}
+
+.builds
+{
+    margin-top: 20px;
+}
+
+.builds .build
+{
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.builds .build img
+{
+    max-width: 300px;
 }
