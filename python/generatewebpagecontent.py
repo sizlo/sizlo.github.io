@@ -2,6 +2,7 @@ import parsealbumfolder
 import sys
 import os
 
+
 def indentBy(html, spaces):
     spacesString = ""
     for i in range(0, spaces):
@@ -61,11 +62,11 @@ def generateAlbumPage(albumData, path):
         htmlFile.write(htmlContent.encode("utf-8"))
 
 
-def generateBuildHtmlForHome(buildData, path):
+def generateBuildHtmlForHome(buildData, relativepath):
     htmlContent =   "<div class=\"build\">\n"
-    htmlContent += "  <a href=\"" + path + "\">\n"
+    htmlContent += "  <a href=\"" + relativepath + "\">\n"
     htmlContent += "    <h3>" + buildData["title"] + "</h3>\n"
-    htmlContent += "    <img src=\"" + path + "/" + buildData["coverimagepath"] + "\" />\n"
+    htmlContent += "    <img src=\"" + relativepath + "/" + buildData["coverimagepath"] + "\" />\n"
     htmlContent += "  </a>\n"
     htmlContent += "</div>\n"
     return htmlContent
@@ -95,7 +96,8 @@ def main():
                     print "Skipping"
                     continue
                 generateAlbumPage(buildData, path)
-                homepageBuildsHtml += indentBy(generateBuildHtmlForHome(buildData, path), 2) + "\n\n"
+                relativePathFromWebsiteRoot = path.replace(websiteRoot, "")
+                homepageBuildsHtml += indentBy(generateBuildHtmlForHome(buildData, relativePathFromWebsiteRoot), 2) + "\n\n"
 
     homepageBuildsHtml = homepageBuildsHtml[:-1] # To remove last newline
     homepageBuildsHtml += "</div>\n"
