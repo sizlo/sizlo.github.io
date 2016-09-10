@@ -2,12 +2,14 @@ from imgurpython import ImgurClient
 import parsealbumfolder
 import sys
 import os
+import re
 
 # Adapted from github examples
 def authenticate():
     # Get client ID and secret from auth.ini
-    client_id = open("clientid.secret").read()
-    client_secret = open("clientsecret.secret").read()
+    scriptDirectoryPath = os.path.dirname(os.path.realpath(__file__)) + "/"
+    client_id = open(scriptDirectoryPath + "clientid.secret").read()
+    client_secret = open(scriptDirectoryPath + "clientsecret.secret").read()
 
     client = ImgurClient(client_id, client_secret)
 
@@ -65,12 +67,33 @@ def uploadAlbum(client, albumData):
         imageData["album"] = albumID
         image = uploadImage(client, imageData)
 
+def removeTagsFromString(s):
+    # From http://stackoverflow.com/questions/9662346/python-code-to-remove-html-tags-from-a-string
+    tagRegex = re.compile(r'<[^>]+>')
+    return tagRegex.sub("", s)
+
+def removeTags(albumData):
+    if "title" in albumData:
+        albumData["title"] = removeTagsFromString(albumData["title"])
+    if "description" in albumData:
+        albumData["description"] = removeTagsFromString(albumData["description"])
+    index = 0
+    for imageData in albumData["images"]:
+        if "title" in imageData:
+            imageData["title"] = removeTagsFromString(imageData["title"])
+        if "description" in imageData:
+            imageData["description"] = removeTagsFromString(imageData["description"])
+        albumData["images"][index] = imageData
+        index += 1
+    return albumData
+
 def main():
     if len(sys.argv) < 2 or not os.path.isdir(sys.argv[1]):
         print "Please supply a valid folder to parse the album from"
         sys.exit(0)
 
     albumData = parseAlbumData(sys.argv[1])
+    albuData = removeTags(albumData)
     client = authenticate()
     uploadAlbum(client, albumData)
 
