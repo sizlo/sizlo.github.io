@@ -1,6 +1,6 @@
 {
     "title": "Workbench",
-    "description": "My first woodworking project. A workbench with a vise based on the design at https://woodgears.ca/workbench/",
+    "description": "My first woodworking project. A workbench with a vise based on the design by Matthias Wandel at <a href=\"https://woodgears.ca/workbench/\">https://woodgears.ca/workbench/</a>",
     "privacy": "public",
     "coverimagepath": "image01.jpg",
     "images": 
