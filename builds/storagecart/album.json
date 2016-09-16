@@ -1,0 +1,65 @@
+{
+    "title": "Storage Cart",
+    "description": "A storage cart for the workshop based on a similar one by Steve Ramsey at <a href=\"https://www.youtube.com/watch?v=nZtIEFa3Ofk\">https://www.youtube.com/watch?v=nZtIEFa3Ofk</a>. It has bins for pieces of wood, a section for sheet goods and shelves for boards and general workshop storage.",
+    "privacy": "public",
+    "coverimagepath": "image14.jpg",
+    "images": 
+    [
+        {
+            "description": "Finished product first.",
+            "path": "image01.jpg"
+        },
+        {
+            "description": "I made a simple jig to guide my circular saw to make straight cuts.",
+            "path": "image02.jpg"
+        },
+        {
+            "description": "You can see my feint pencil layout marks here as well as some lines I drew adjusting my square to 90 degrees.",
+            "path": "image03.jpg"
+        },
+        {
+            "description": "When cutting the dados on the base to start each cut I had to manually move the blade guard out of the way. On the first cut I decided to just clamp it open, then immediately forgot about it and set the saw down when the blade hadn't completely stopped, leaving this gouge. Lesson learned here is don't mess with the safety features on your tools, and if you're going to be an idiot and do it anyway be constantly aware of what you're doing. Luckily this only damaged my straight cut jig.",
+            "path": "image04.jpg"
+        },
+        {
+            "description": "Dados cut for the bins.",
+            "path": "image05.jpg"
+        },
+        {
+            "description": "I cut one of the side pieces for the bins too wide so had to plane it down to fit.",
+            "path": "image06.jpg"
+        },
+        {
+            "description": "My clamp setup for keeping the sides of the bins in place while screwing everything together.",
+            "path": "image07.jpg"
+        },
+        {
+            "description": "All the bins built.",
+            "path": "image08.jpg"
+        },
+        {
+            "description": "Added the backboard for the bins, with the dados cut for shelves. Not pictured is the casters that are now mounted on the bottom.",
+            "path": "image09.jpg"
+        },
+        {
+            "description": "First shelf and the backboard for sheet goods to rest on.",
+            "path": "image10.jpg"
+        },
+        {
+            "description": "All done.",
+            "path": "image11.jpg"
+        },
+        {
+            "description": "You can see I messed up driving a few screws for the shelves in and had to redrill them so the ends of the screws wouldn't poke out.",
+            "path": "image12.jpg"
+        },
+        {
+            "description": "I'm using one bin for longish pieces, one for short but usable pieces and one for scraps that are only really good for the fire pit.",
+            "path": "image13.jpg"
+        },
+        {
+            "description": "The shelves will be used for wider boards when I need to store them and other gubbins for the shop. At the moment there's some old skateboard decks that I'm trying to think of a project to use in.",
+            "path": "image14.jpg"
+        }
+    ]
+}
