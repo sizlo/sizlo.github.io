@@ -1,0 +1,29 @@
+{
+    "title": "Climbing Hold Mug",
+    "description": "A secret santa gift for someone who loves climbing.",
+    "privacy": "public",
+    "coverimagepath": "image005.jpg",
+    "images": 
+    [
+        {
+            "description": "Started with a cheap mug, one swift bash on the workbench knocked the handle off.",
+            "path": "image001.jpg"
+        },
+        {
+            "description": "Shaped the hold to the curve of the mug by wrapping the mug in 80 grit sandpaper and sanding the hold down on it.",
+            "path": "image002.jpg"
+        },
+        {
+            "description": "Made some holes to accomodate the stubs of the handle on the drill press.",
+            "path": "image003.jpg"
+        },
+        {
+            "description": "Attached the hold to the mug with epoxy, clamped and left to dry overnight.",
+            "path": "image004.jpg"
+        },
+        {
+            "description": "Tada!",
+            "path": "image006.jpg"
+        }
+    ]
+}

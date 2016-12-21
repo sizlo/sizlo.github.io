@@ -17,6 +17,7 @@
 
 .album .image img
 {
+    max-height: 350px;
     max-width: 400px;
     float: left;
     margin-right: 10px;
