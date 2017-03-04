@@ -1,6 +1,7 @@
 import parsealbumfolder
 import sys
 import os
+import datetime
 
 
 def indentBy(html, spaces):
@@ -51,6 +52,7 @@ def generateAlbumPage(albumData, path):
     htmlContent += "    <div class=\"albumintro\">\n"
     htmlContent += "      <h1>" + albumData["title"] + "</h1>\n"
     htmlContent += "      <p>" + albumData["description"] + "</p>\n"
+    htmlContent += "      <p>" + albumData["date"] + "</p>\n"
     htmlContent += "      " + getImageHtml(albumData["coverimagepath"]) + "\n"
     htmlContent += "    </div>\n"
     htmlContent += "\n"
@@ -75,6 +77,9 @@ def generateBuildHtmlForHome(buildData, relativepath):
     htmlContent += "</div>\n"
     return htmlContent
 
+def toDateObject(dateString):
+    return datetime.datetime.strptime(dateString, "%d/%m/%Y")
+
 def main():
     # Find the builds folder
     scriptDirectoryPath = os.path.dirname(os.path.realpath(__file__)) + "/"
@@ -87,8 +92,9 @@ def main():
     homepageBuildsHtml += "<div class=\"builds\">\n"
     homepageBuildsHtml += "  <h3>Things I've built</h3>\n"
 
-    # For every build in the builds factory, generate an album page for it
+    # For every build in the builds directory, generate an album page for it
     # and generate a link to it on the homepage
+    homepageBuilds = {}
     for subpath in os.listdir(buildsDirectory):
         path = buildsDirectory + subpath
         if os.path.isdir(path):
@@ -101,7 +107,11 @@ def main():
                     continue
                 generateAlbumPage(buildData, path)
                 relativePathFromWebsiteRoot = path.replace(websiteRoot, "")
-                homepageBuildsHtml += indentBy(generateBuildHtmlForHome(buildData, relativePathFromWebsiteRoot), 2) + "\n\n"
+                homepageBuilds[buildData["date"]] = indentBy(generateBuildHtmlForHome(buildData, relativePathFromWebsiteRoot), 2) + "\n\n"
+
+    sortedDates = sorted(homepageBuilds, key=toDateObject, reverse=True)
+    for date in sortedDates:
+        homepageBuildsHtml += homepageBuilds[date]
 
     homepageBuildsHtml = homepageBuildsHtml[:-1] # To remove last newline
     homepageBuildsHtml += "</div>\n"
