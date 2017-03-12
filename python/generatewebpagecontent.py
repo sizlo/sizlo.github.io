@@ -72,7 +72,7 @@ def generateBuildHtmlForHome(buildData, relativepath):
     htmlContent =   "<div class=\"build\">\n"
     htmlContent += "  <a href=\"" + relativepath + "\">\n"
     htmlContent += "    <h3>" + buildData["title"] + "</h3>\n"
-    htmlContent += "    <img src=\"" + relativepath + "/" + buildData["coverimagepath"] + "\" />\n"
+    htmlContent += "    <div class=\"img\" style=\"background-image:url('" + relativepath + "/" + buildData["coverimagepath"] + "');\"></div>\n"
     htmlContent += "  </a>\n"
     htmlContent += "</div>\n"
     return htmlContent
