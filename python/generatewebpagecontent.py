@@ -52,7 +52,7 @@ def generateAlbumPage(albumData, path):
     htmlContent += "    <div class=\"albumintro\">\n"
     htmlContent += "      <h1>" + albumData["title"] + "</h1>\n"
     htmlContent += "      <p>" + albumData["description"] + "</p>\n"
-    htmlContent += "      <p>" + albumData["date"] + "</p>\n"
+    htmlContent += "      <p>Completed on " + albumData["date"] + ".</p>\n"
     htmlContent += "      " + getImageHtml(albumData["coverimagepath"]) + "\n"
     htmlContent += "    </div>\n"
     htmlContent += "\n"
