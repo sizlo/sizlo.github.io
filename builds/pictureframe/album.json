@@ -1,0 +1,66 @@
+{
+    "title": "Picture Frame",
+    "description": "A picture frame I built for my friend. Made using a wardrobe he gave me to salvage wood from.",
+    "date": "31/03/2017",
+    "privacy": "public",
+    "coverimagepath": "image14.jpg",
+    "images": 
+    [
+        {
+            "description": "I got all the wood for the frame by ripping this section from the base of the wardrobe.",
+            "path": "image01.jpg"
+        },
+        {
+            "description": "The mose boring part of the project was sanding all the finish of, sanding concave curves isn't fun.",
+            "path": "image02.jpg"
+        },
+        {
+            "description": "I cut the mitres using the crappy mitre guage that came with my table saw. If I was doing this again I'd build a mitre sled.",
+            "path": "image03.jpg"
+        },
+        {
+            "description": "Each piece had a rebate cut on the table saw for the \"glass\" pane and backing board.",
+            "path": "image04.jpg"
+        },
+        {
+            "description": "Here's how I glued the mitres together, masking tape and an F clamp to keep them aligned. Can you see the mistake yet?",
+            "path": "image05.jpg"
+        },
+        {
+            "description": "Yeah that was a bit dumb.",
+            "path": "image06.jpg"
+        },
+        {
+            "description": "It was a lot easier than I'd like to pull apart that end grain to end grain glue joint. I expect if this frame gets dropped it'll just pop apart.",
+            "path": "image07.jpg"
+        },
+        {
+            "description": "After that happy little accident I glued the pieces on one by one to make sure I made a square this time.",
+            "path": "image08.jpg"
+        },
+        {
+            "description": "It's a bit gappy, this is why I'd built a mitre sled for future projects.",
+            "path": "image09.jpg"
+        },
+        {
+            "description": "I filled the gaps in with a wood glue and sawdust mixture.",
+            "path": "image10.jpg"
+        },
+        {
+            "description": "Finished with three coats of boiled linseed oil.",
+            "path": "image11.jpg"
+        },
+        {
+            "description": "The gaps are still a bit too obvious for my liking.",
+            "path": "image12.jpg"
+        },
+        {
+            "description": "Two little tabs are screwed on just loose enough that you can still turn them by hand to hold the backboard and a sheet of perspex in. The frame stands on two feet made of dowels and chunks of wood which can be moved to make the frame portrait or landscape.",
+            "path": "image13.jpg"
+        },
+        {
+            "description": "It's a little wobbly in portrait unless you fiddle with the feet to get them perfect but it's solid in landscape.",
+            "path": "image14.jpg"
+        }
+    ]
+}
