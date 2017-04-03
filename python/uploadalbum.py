@@ -63,6 +63,10 @@ def uploadAlbum(client, albumData):
     albumID = album["id"]
     print "Created http://imgur.com/a/" + albumID
 
+    coverImageData = {}
+    coverImageData["path"] = album["coverimagepath"]
+    uploadImage(client, coverImage)
+
     for imageData in albumData["images"]:
         imageData["album"] = albumID
         image = uploadImage(client, imageData)
