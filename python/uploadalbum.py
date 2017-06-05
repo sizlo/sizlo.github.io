@@ -46,6 +46,9 @@ def parseAlbumData(path):
         albumData["images"][index]["path"] = fullImagePath
         index += 1
 
+    fullCoverImagePath = path + "/" + albumData["coverimagepath"]
+    albumData["coverimagepath"] = fullCoverImagePath
+
     return albumData
     
 
@@ -64,8 +67,11 @@ def uploadAlbum(client, albumData):
     print "Created http://imgur.com/a/" + albumID
 
     coverImageData = {}
-    coverImageData["path"] = album["coverimagepath"]
-    uploadImage(client, coverImage)
+    coverImageData["path"] = albumData["coverimagepath"]
+    coverImageData["description"] = albumData["description"]
+    coverImageData["title"] = albumData["title"]
+    coverImageData["album"] = albumID
+    uploadImage(client, coverImageData)
 
     for imageData in albumData["images"]:
         imageData["album"] = albumID
@@ -97,7 +103,7 @@ def main():
         sys.exit(0)
 
     albumData = parseAlbumData(sys.argv[1])
-    albuData = removeTags(albumData)
+    albumData = removeTags(albumData)
     client = authenticate()
     uploadAlbum(client, albumData)
 
