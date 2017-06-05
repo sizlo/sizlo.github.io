@@ -1,0 +1,62 @@
+{
+    "title": "Bootjack",
+    "description": "A bootjack I made for my mums birthday, only 8 months late. Made from maple and walnut, finished with spray lacquer.",
+    "date": "05/06/2017",
+    "privacy": "public",
+    "coverimagepath": "image13.jpg",
+    "images": 
+    [
+        {
+            "description": "I drew up a simple plan for the project to figure out all the dimensions.",
+            "path": "image01.jpg"
+        },
+        {
+            "description": "Ripped the pieces on the table saw then glued them up. I used way too much glue and got a lot of squeezeout.",
+            "path": "image02.jpg"
+        },
+        {
+            "description": "After I sanded away the excess glue there was a pretty bad slope on the piece, so I brought it back to flat with a hand plane.",
+            "path": "image03.jpg"
+        },
+        {
+            "description": "Marking up for the centre of the hole.",
+            "path": "image04.jpg"
+        },
+        {
+            "description": "I used a forstner bit in the drill press to make the hole, then attempted to cut the horns with a jigsaw. It didn't make a pretty job of it. I think my mistake was cutting from the outside towards the hole, maybe it would have been better cutting from the hole out.",
+            "path": "image05.jpg"
+        },
+        {
+            "description": "Using a coping saw got me a much cleaner result.",
+            "path": "image06.jpg"
+        },
+        {
+            "description": "After about 10 minutes of trying to clean up the shaping by hand with sandpaper I realised it was a bad idea and bought a sander set for the drill press. This works much better than I was expecting.",
+            "path": "image07.jpg"
+        },
+        {
+            "description": "The final shape involved removing more material than I had planned, as I based the original shape on the wrong boot so needed to narrow it down more.",
+            "path": "image08.jpg"
+        },
+        {
+            "description": "I cut a dado for the stand on the table saw and cleaned it up later with a chisel. I also cut tapers to each side on the table saw but did not get a picture of that.",
+            "path": "image09.jpg"
+        },
+        {
+            "description": "Getting this clamped up with the angle on the stand was a nightmare, I should have either cut the angle after gluing, or saved the angle offcut to tape back on with double sided tape for the glue up.",
+            "path": "image10.jpg"
+        },
+        {
+            "description": "I used a flush cut saw to cut off the excess of the stand and sandpaper taped to my workbench to make the angle of the stand perfect.",
+            "path": "image11.jpg"
+        },
+        {
+            "description": "All sanded and ready for finish.",
+            "path": "image12.jpg"
+        },
+        {
+            "description": "Finished with 3 coats of spray lacquer.",
+            "path": "image13.jpg"
+        }
+    ]
+}
