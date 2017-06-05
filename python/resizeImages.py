@@ -18,9 +18,16 @@ def resizeImage(path):
         print "Renaming " + path
         os.rename(path, fullSizePath)
 
-    resizeFactor = "33%"
-    print "Resizing " + fullSizePath + " by " + resizeFactor + " to " + path
-    subprocess.call(["convert", fullSizePath, "-resize", resizeFactor, path])
+    if not os.path.isfile(path):
+        resizeFactor = "33%"
+        print "Resizing " + fullSizePath + " by " + resizeFactor + " to " + path
+        subprocess.call(["convert", fullSizePath, "-resize", resizeFactor, path])
+
+    smallpath = pathWithoutExtension + "_small" + extension
+    if not os.path.isfile(smallpath):
+        resizeFactor = "400x"
+        print "Resizing " + fullSizePath + " to " + resizeFactor + " to " + smallpath
+        subprocess.call(["convert", fullSizePath, "-resize", resizeFactor, smallpath])
 
 
 def main():
