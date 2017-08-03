@@ -1,0 +1,82 @@
+{
+    "title": "Spice Rack",
+    "description": "A spice rack made for a friend from Walnut and Maple.",
+    "date": "03/08/2017",
+    "privacy": "public",
+    "coverimagepath": "image18.jpg",
+    "images": 
+    [
+        {
+            "description": "I knew the dimensions I had to play with for where the spice rack was going to live, and drew up a quick sketch plan to make the most of the space. The shelves get gradually more height as they go up so there is space for different sized spice bottles without wasting any space.",
+            "path": "image01.jpg"
+        },
+        {
+            "description": "The stock was cut to rough dimensions on the table saw, including re-sawing to thickness. I really need a thicknesser to be able to dial that in, the saw didn't leave the best surface to work with.",
+            "path": "image02.jpg"
+        },
+        {
+            "description": "I used box joint on the bottom corners of the spice rack, made with this simple jig.",
+            "path": "image03.jpg"
+        },
+        {
+            "description": "I didn't make the jig perfectly, so the joints are pretty gappy.",
+            "path": "image04.jpg"
+        },
+        {
+            "description": "The dados for the shelves were cut by using a stop block and spacer to make the two outside cuts, then nibbling the material between them one cut at a time on the table saw.",
+            "path": "image05.jpg"
+        },
+        {
+            "description": "Oops. For one dado I referenced from the wrong side of the board, and the rough lengths I'd cut them to weren't the same for each board. Lesson learnt, if two pieces will end up the same size, make your rough cuts the same size.",
+            "path": "image06.jpg"
+        },
+        {
+            "description": "Here you can see the mistake on the right of the middle shelf in a dry assembly.",
+            "path": "image07.jpg"
+        },
+        {
+            "description": "It was a simple fix though, glue in a shim and trim the ends off.",
+            "path": "image08.jpg"
+        },
+        {
+            "description": "I ripped these small rails from the cut-offs of resawing the shelf boards, and cut dados to house them the same way as the shelf dados.",
+            "path": "image09.jpg"
+        },
+        {
+            "description": "Gluing everything up. All the joints were fairly loose so this was a bit stressful to get clamped up without anything moving.",
+            "path": "image10.jpg"
+        },
+        {
+            "description": "Gluing the rails on, the front rails are low down so you can read the bottles while the back rails are in the middle to stop bottles falling back. This set of 10 clamps just arrived that day so it was perfect timing.",
+            "path": "image11.jpg"
+        },
+        {
+            "description": "The bottom board had a slight cup so would wobble on the table. I fixed this by gluing little feet to the bottom and flattening them all with sandpaper.",
+            "path": "image12.jpg"
+        },
+        {
+            "description": "I finished the spice rack with 5 coats of spray lacquer. I rushed the sanding a bit so the final finish still feels slightly rough.",
+            "path": "image13.jpg"
+        },
+        {
+            "description": "But that doesn't stop it from doing it's job of racking spices.",
+            "path": "image14.jpg"
+        },
+        {
+            "description": "I filled the box joint gaps with a mixture of sawdust and wood glue, it still looks a little off but not too bad.",
+            "path": "image15.jpg"
+        },
+        {
+            "description": "When cutting the rail dados I made a mesurement error so had to fill this hole with the saw dust and glue mixture too.",
+            "path": "image16.jpg"
+        },
+        {
+            "description": "This fix for the out of line dados is invisible from the front but still looks fine from the back.",
+            "path": "image17.jpg"
+        },
+        {
+            "description": "Ignore the fact there are 3 bottles of chilli powder...",
+            "path": "image18.jpg"
+        }
+    ]
+}
