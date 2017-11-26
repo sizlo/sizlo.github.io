@@ -1,0 +1,58 @@
+{
+    "title": "Picture Frames",
+    "description": "Picture frames made from walnut and maple, one of which I personalised for a friends wedding.",
+    "date": "08/11/2017",
+    "privacy": "public",
+    "coverimagepath": "cover.jpg",
+    "images": 
+    [
+        {
+            "description": "This project was a good way to use up some small scraps I had. With what I had on hand I was able to make 4 frames that fit 5\" by 3.75\" photos.",
+            "path": "image01.jpg"
+        },
+        {
+            "description": "One of the frames was for a wedding gift, I carved the date of the wedding and their initials into it freehand with a router.",
+            "path": "image02.jpg"
+        },
+        {
+            "description": "Laying out the two options for the corner joints to see which one looked best.",
+            "path": "image03.jpg"
+        },
+        {
+            "description": "I cut the bridle joints for the corners on the table saw, using a stop block to set the boundary of the cut and flipping the piece over to make sure it was centred. Another pass over the table saw took the rest of the material out.",
+            "path": "image04.jpg"
+        },
+        {
+            "description": "The rabbets for the inner parts of the joint were made by doing one cut on the table saw with the piece flat, and one cut with it vertical. ",
+            "path": "image05.jpg"
+        },
+        {
+            "description": "From the front everything looks good...",
+            "path": "image06.jpg"
+        },
+        {
+            "description": "...but from the side you can tell it's got a fair bit of twist in it. Just don't try to lay the frames flat and everything will be fine.",
+            "path": "image07.jpg"
+        },
+        {
+            "description": "I slapped together a quick router table for cutting the rabbets for the pane and backing board.",
+            "path": "image08.jpg"
+        },
+        {
+            "description": "I was smart enough to do stopped rabbets in the maple so you wouldn't see them from the side, but for some reason I thought it was fine to go all the way through on the walnut.",
+            "path": "image09.jpg"
+        },
+        {
+            "description": "I was wrong.",
+            "path": "image10.jpg"
+        },
+        {
+            "description": "The backing board is from the plywood backer of an old wardrobe, and I bought some simple stands that hook onto them.",
+            "path": "image11.jpg"
+        },
+        {
+            "description": "The four finished frames. The lefmost one is finished with spray lacquer, the others with boiled linseed oil. I definitely prefer the oiled one but wanted to try both to see how they came out.",
+            "path": "image12.jpg"
+        }
+    ]
+}
