@@ -1,0 +1,39 @@
+{
+    "title": "Prize Wheel",
+    "description": "A random selector prize wheel that goes clackety clack.",
+    "date": "10/12/2017",
+    "privacy": "public",
+    "coverimagepath": "cover.jpg",
+    "images": 
+    [
+        {
+            "description": "The wheel was cut by mounting it on a pin on a sled then rotating it round cutting the corners off until there's no corners left.",
+            "path": "image01.jpg"
+        },
+        {
+            "description": "Tada!",
+            "path": "image02.jpg"
+        },
+        {
+            "description": "I drove screws in to divide each segment, and pressure fitted some skateboard bearings in the middle for it to spin on.",
+            "path": "image03.jpg"
+        },
+        {
+            "description": "Simple frame construction, cut the angles with the mitre guage on the table saw.",
+            "path": "image04.jpg"
+        },
+        {
+            "description": "Some threaded rod is epoxied in for the wheel to mount on.",
+            "path": "image05.jpg"
+        },
+        {
+            "description": "A bit of plastic from a bottle works great as the stopper.",
+            "path": "image06.jpg"
+        },
+        {
+            "description": "Clackety clackety clack.",
+            "video": true,
+            "path": "video07.mp4"
+        }
+    ]
+}
