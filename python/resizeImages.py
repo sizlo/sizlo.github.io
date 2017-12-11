@@ -39,6 +39,9 @@ def main():
     albumData = parsealbumfolder.parseAlbumFolder(path)
     resizeImage(path + "/" + albumData["coverimagepath"])
     for imageData in albumData["images"]:
+        if 'video' in imageData.keys() and imageData['video']:
+            print "Skipping video file " + imageData["path"]
+            continue
         resizeImage(path + "/" + imageData["path"])
 
 

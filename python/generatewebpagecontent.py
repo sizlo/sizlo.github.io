@@ -36,6 +36,18 @@ def getImageHtml(path, isCover=False):
         path = smallPath
     return "<a href=\"" + fullSizePath + "\"><img src=\"" + path + "\" title=\"Click for larger size\" /></a>"
 
+def getVideoHtml(path):
+    result = "<video controls>\n"
+    result += "  <source src=\"" + path + "\" type=\"video/mp4\">"
+    result += "</video>"
+    return result
+
+def getMediaHtml(mediaData):
+    if 'video' in mediaData.keys() and mediaData['video']:
+        return getVideoHtml(mediaData['path'])
+    else:
+        return getImageHtml(mediaData['path'])
+
 def generateAlbumPage(albumData, path):
     imageListHtml = ""
     for imageData in albumData["images"]:
@@ -46,7 +58,7 @@ def generateAlbumPage(albumData, path):
         if "description" in imageData:
             imageDescriptionHtml = "  <p>" + imageData["description"] + "</p>\n"
         imageListHtml += "<div class=\"image\">\n"
-        imageListHtml += "  " + getImageHtml(imageData["path"]) + "\n"
+        imageListHtml += "  " + getMediaHtml(imageData) + "\n"
         imageListHtml += imageTitleHtml
         imageListHtml += imageDescriptionHtml
         imageListHtml += "</div>\n\n"
