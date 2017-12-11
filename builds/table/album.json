@@ -1,0 +1,70 @@
+{
+    "title": "Table",
+    "description": "A kitchen table made with 2x4s and veneered mdf.",
+    "date": "11/12/2017",
+    "privacy": "public",
+    "coverimagepath": "image15.jpg",
+    "images": 
+    [
+        {
+            "description": "Started with a stack of 2x4s cut to length.",
+            "path": "image01.jpg"
+        },
+        {
+            "description": "Each leg got a taper cut freehand with a circular saw.",
+            "path": "image02.jpg"
+        },
+        {
+            "description": "They weren't very accurate or consistent.",
+            "path": "image03.jpg"
+        },
+        {
+            "description": "The shorter sides of the apron are joined with mortice and tenons. Mortices were cut on the drill press, tenons on the table saw then rounded by hand with a chisel.",
+            "path": "image04.jpg"
+        },
+        {
+            "description": "The longer sides of the aprons use half laps, cut on the table saw.",
+            "path": "image05.jpg"
+        },
+        {
+            "description": "Each leg got a slight chamfer on the bottom to prevent tearout when it's dragged along the floor.",
+            "path": "image06.jpg"
+        },
+        {
+            "description": "Glueing up the mortice and tenons.",
+            "path": "image07.jpg"
+        },
+        {
+            "description": "The half laps are just screwed in place so the table can be knocked down and moved easily. Each joint got three short and three long screws laid out like this.",
+            "path": "image08.jpg"
+        },
+        {
+            "description": "Frame complete!",
+            "path": "image09.jpg"
+        },
+        {
+            "description": "I glued on blocks to attach the top to the frame.",
+            "path": "image10.jpg"
+        },
+        {
+            "description": "The top is oak veneered mdf and is just screwed on.",
+            "path": "image11.jpg"
+        },
+        {
+            "description": "I glued on a mitred hardwood frame to hide the mdf edges. The wood was just described as \"hardwood\" where I bought it so I've no idea what it actually is.",
+            "path": "image12.jpg"
+        },
+        {
+            "description": "Before taking the top off I drilled alignment holes in the blocks and top. Glueing in these dowels makes putting the top on in the right position easy.",
+            "path": "image13.jpg"
+        },
+        {
+            "description": "The frame painted white. I'm still unsure over whether this looks better than the grain and knots of the 2x4s, but there were some pretty rough spots in the wood that the paint covers fairly well.",
+            "path": "image14.jpg"
+        },
+        {
+            "description": "I finished the top with four coats of danish oil. Very happy with how it turned out. Now I just need to build some chairs.",
+            "path": "image15.jpg"
+        }
+    ]
+}
