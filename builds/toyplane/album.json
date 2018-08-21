@@ -1,0 +1,23 @@
+{
+    "title": "Toy Plane",
+    "description": "A toy plane I made for my nephews 2nd birthday. Made with scraps of sapele and oak, finished with boiled linseed oil.",
+    "date": "29/06/2018",
+    "privacy": "public",
+    "coverimagepath": "cover.jpg",
+    "images": 
+    [
+        {
+            "description": "",
+            "path": "image01.jpg"
+        },
+        {
+            "description": "",
+            "path": "image02.jpg"
+        },
+        {
+            "description": "NEEEYOOUUUUUMMMM",
+            "video": true,
+            "path": "plane.mp4"
+        }
+    ]
+}

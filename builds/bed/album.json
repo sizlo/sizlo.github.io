@@ -1,0 +1,42 @@
+{
+    "title": "Bed",
+    "description": "A bed made from sapele, with pine slats. Finished with danish oil.",
+    "date": "8/07/2018",
+    "privacy": "public",
+    "coverimagepath": "cover.jpg",
+    "images": 
+    [
+        {
+            "description": "The basic frame made from sapele, the slat supports on the sides are a 2x4 ripped in half.",
+            "path": "image01.jpg"
+        },
+        {
+            "description": "The legs each have a taper on both outside faces and chamfers at the top. The rails also meet the legs with a chamfer.",
+            "path": "image02.jpg"
+        },
+        {
+            "description": "Dowels and zipbolt connectors were used to join the rails to the legs. The dowels are only glued into the rails so the whole frame can be dismantled flat.",
+            "path": "image03.jpg"
+        },
+        {
+            "description": "Closed joint.",
+            "path": "image04.jpg"
+        },
+        {
+            "description": "A simple 2x4 adds extra support for the slats in the centre.",
+            "path": "image05.jpg"
+        },
+        {
+            "description": "This centre support is joined to the rails using pocket holes.",
+            "path": "image06.jpg"
+        },
+        {
+            "description": "The slats are screwed into the supports on either side.",
+            "path": "image07.jpg"
+        },
+        {
+            "description": "The fit for a king size mattress came out great, it's not too tight that it's hard to drop in but it doesn't move about either.",
+            "path": "image08.jpg"
+        }
+    ]
+}

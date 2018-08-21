@@ -1,0 +1,14 @@
+{
+    "title": "Desk",
+    "description": "A desk made with leftover material from building <a href=\"../table\">my table</a>.",
+    "date": "04/02/2018",
+    "privacy": "public",
+    "coverimagepath": "cover.jpg",
+    "images": 
+    [
+        {
+            "description": "",
+            "path": "image01.jpg"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "title": "Cutlery Tray",
+    "description": "A cutlery tray made from oak and finished with spray lacquer.",
+    "date": "21/04/2018",
+    "privacy": "public",
+    "coverimagepath": "cover.jpg",
+    "images": 
+    [
+        {
+            "description": "Made with dovetail joints and dados. The dovetails were cut by hand. You can see where I messed up measuring and put an extra dado in the back.",
+            "path": "image01.jpg"
+        },
+        {
+            "description": "Closeup of the best dovetail, I forgot to remove my marking lines.",
+            "path": "image02.jpg"
+        }
+    ]
+}
