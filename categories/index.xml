@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Tim Brier</title>
-    <link>https://timbrier.com/categories/</link>
+    <link>http://timbrier.com/categories/</link>
     <description>Recent content in Categories on Tim Brier</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
     
-	<atom:link href="https://timbrier.com/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://timbrier.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
