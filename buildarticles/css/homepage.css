@@ -3,30 +3,11 @@
     margin: 0;
 }
 
-html, body
-{
-    height: 100%;
-}
-
 .main
 {
-    min-height: 100%;
     margin-left: 10px;
-    /* equal to footer height */
-    margin-bottom: -20px; 
+    overflow: auto;
 }
-
-.main:after
-{
-    content: "";
-    display: block;
-}
-
-.secret, .main:after
-{
-    height: 20px; 
-}
-
 .secret a
 {
     color: gainsboro; /* Slightly visible grey */
