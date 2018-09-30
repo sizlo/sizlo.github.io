@@ -703,6 +703,130 @@ p.social.social--big i.fa-phone {
 p.social.social--big span {
   margin-left: 20px;
 }
+
+a.social-big {
+  color: #999999;
+}
+a.social-big:active,
+a.social-big:focus,
+a.social-big:hover {
+  text-decoration: none;
+  color: #999999;
+}
+a.social-big:hover {
+  color: #a0892c;
+}
+div.social-big {
+  line-height: 60px;
+  font-size: 25px;
+  padding-left: 70px;
+  margin-bottom: 5px;
+}
+div.social-big:after {
+  position: absolute;
+  left: 0;
+  margin-left: 40px;
+  border-style: solid;
+  border-radius: 30px;
+  border-width: 1px;
+  width: 60px;
+  height: 60px;
+}
+@media screen and (min-width: 1200px) {
+  div.social-big:after {
+    margin-left: 60px;
+  }
+}
+div.social-big.instagram:after {
+  font-family: 'Font Awesome 5 Brands';
+  font-weight: 400;
+  content: '\f16d';
+  padding-left: 18px;
+  line-height: 56px;
+}
+div.social-big.etsy:after {
+  font-family: 'Font Awesome 5 Brands';
+  font-weight: 400;
+  content: '\f2d7';
+  padding-left: 20px;
+  line-height: 56px;
+}
+div.social-big.email:after {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f0e0';
+  padding-left: 17px;
+  line-height: 56px;
+}
+div.social-big.phone:after {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f095';
+  padding-left: 16px;
+  line-height: 57px;
+}
+
+a.social-small {
+  color: #999999;
+}
+a.social-small:active,
+a.social-small:focus,
+a.social-small:hover {
+  text-decoration: none;
+  color: #999999;
+}
+a.social-small:hover {
+  color: #a0892c;
+}
+div.social-small {
+  line-height: 40px;
+  font-size: 15px;
+  padding-left: 45px;
+  margin-bottom: 5px;
+}
+div.social-small:after {
+  position: absolute;
+  left: 0;
+  margin-left: 15px;
+  border-style: solid;
+  border-radius: 20px;
+  border-width: 1px;
+  width: 40px;
+  height: 40px;
+}
+@media screen and (min-width: 992px) {
+  div.social-small:after {
+    margin-left: 35px;
+  }
+}
+div.social-small.instagram:after {
+  font-family: 'Font Awesome 5 Brands';
+  font-weight: 400;
+  content: '\f16d';
+  padding-left: 13px;
+  line-height: 38px;
+}
+div.social-small.etsy:after {
+  font-family: 'Font Awesome 5 Brands';
+  font-weight: 400;
+  content: '\f2d7';
+  padding-left: 14px;
+  line-height: 38px;
+}
+div.social-small.email:after {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f0e0';
+  padding-left: 12px;
+  line-height: 38px;
+}
+div.social-small.phone:after {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f095';
+  padding-left: 12px;
+  line-height: 38px;
+}
 /*
 =====================
 COPYRIGHT
@@ -2205,6 +2329,7 @@ a.list-group-item.active > .badge,
 .mobile-navbar li {
     float: left;
     border-right: 1px solid #f4f4f4;
+    text-decoration: none;
 }
 .mobile-navbar li a {
     display: block;
