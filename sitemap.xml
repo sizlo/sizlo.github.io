@@ -3,7 +3,23 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://timbrier.com/portfolio/candleholder/</loc>
+  </url>
+  
+  <url>
     <loc>https://timbrier.com/portfolio/toyplane/</loc>
+  </url>
+  
+  <url>
+    <loc>https://timbrier.com/portfolio/train/</loc>
+  </url>
+  
+  <url>
+    <loc>https://timbrier.com/portfolio/bathboard/</loc>
+  </url>
+  
+  <url>
+    <loc>https://timbrier.com/portfolio/cutlerytray/</loc>
   </url>
   
   <url>
@@ -11,7 +27,23 @@
   </url>
   
   <url>
+    <loc>https://timbrier.com/portfolio/cuttingboard/</loc>
+  </url>
+  
+  <url>
+    <loc>https://timbrier.com/portfolio/winestand/</loc>
+  </url>
+  
+  <url>
+    <loc>https://timbrier.com/portfolio/winedisplay/</loc>
+  </url>
+  
+  <url>
     <loc>https://timbrier.com/portfolio/bed/</loc>
+  </url>
+  
+  <url>
+    <loc>https://timbrier.com/portfolio/candleholder2/</loc>
   </url>
   
   <url>
@@ -24,16 +56,20 @@
   </url>
   
   <url>
-    <loc>https://timbrier.com/portfolio/cutlerytray/</loc>
+    <loc>https://timbrier.com/portfolio/gardenbench/</loc>
   </url>
   
   <url>
-    <loc>https://timbrier.com/portfolio/gardenbench/</loc>
+    <loc>https://timbrier.com/portfolio/chunkypictureframe/</loc>
   </url>
   
   <url>
     <loc>https://timbrier.com/portfolio/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://timbrier.com/portfolio/rattle/</loc>
   </url>
   
   <url>

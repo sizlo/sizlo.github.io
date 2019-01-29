@@ -656,54 +656,19 @@ p.social.social--outline a.link {
   color: #871AFF;
   border-color: #871AFF;
 }
-.social--big--container {
-  margin-bottom: 20px;
-}
-p.social.social--big {
-  margin-top: 0;
-  margin-bottom:0;
-}
-p.social.social--big a {
-  width: 60px;
-  height: 60px;
-  border-radius: 30px;
-  line-height: 60px;
-  font-size: 25px;
-}
-p.social.social--big a span {
-  font-size: 25px;
-}
-p.social.social--big a:hover {
-  text-decoration: none;
-}
-p.social.social--big i {
-  line-height: 60px;
-  display: inline;
-}
-p.social.social--big i {
-  line-height: 60px;
-  display: inline;
-}
-p.social.social--big i.fa-instagram {
-  margin-left: 18px;
-  margin-right: 6px;
-}
-p.social.social--big i.fa-etsy {
-  margin-left: 20px;
-  margin-right: 6px;
-}
-p.social.social--big i.fa-envelope {
-  margin-left: 17px;
-  margin-right: 4px;
-}
-p.social.social--big i.fa-phone {
-  margin-left: 17px;
-  margin-right: 4px;
-}
-p.social.social--big span {
-  margin-left: 20px;
-}
 
+div.social-big--container {
+    margin-bottom: 24px;
+}
+span.social-big--icon {
+    margin-right: 6px;
+    font-size: 36px;
+}
+div.social-big {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
 a.social-big {
   color: #999999;
 }
@@ -716,56 +681,16 @@ a.social-big:hover {
 a.social-big:hover {
   color: #a0892c;
 }
-div.social-big {
-  line-height: 60px;
-  font-size: 25px;
-  padding-left: 70px;
-  margin-bottom: 5px;
-}
-div.social-big:after {
-  position: absolute;
-  left: 0;
-  margin-left: 40px;
-  border-style: solid;
-  border-radius: 30px;
-  border-width: 1px;
-  width: 60px;
-  height: 60px;
-}
-@media screen and (min-width: 1200px) {
-  div.social-big:after {
-    margin-left: 60px;
-  }
-}
-div.social-big.instagram:after {
-  font-family: 'Font Awesome 5 Brands';
-  font-weight: 400;
-  content: '\f16d';
-  padding-left: 18px;
-  line-height: 56px;
-}
-div.social-big.etsy:after {
-  font-family: 'Font Awesome 5 Brands';
-  font-weight: 400;
-  content: '\f2d7';
-  padding-left: 20px;
-  line-height: 56px;
-}
-div.social-big.email:after {
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 900;
-  content: '\f0e0';
-  padding-left: 17px;
-  line-height: 56px;
-}
-div.social-big.phone:after {
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 900;
-  content: '\f095';
-  padding-left: 16px;
-  line-height: 57px;
-}
 
+span.social-small--icon {
+    margin-right: 6px;
+    font-size: 24px;
+}
+div.social-small {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
 a.social-small {
   color: #999999;
 }
@@ -778,55 +703,7 @@ a.social-small:hover {
 a.social-small:hover {
   color: #a0892c;
 }
-div.social-small {
-  line-height: 40px;
-  font-size: 15px;
-  padding-left: 45px;
-  margin-bottom: 5px;
-}
-div.social-small:after {
-  position: absolute;
-  left: 0;
-  margin-left: 15px;
-  border-style: solid;
-  border-radius: 20px;
-  border-width: 1px;
-  width: 40px;
-  height: 40px;
-}
-@media screen and (min-width: 992px) {
-  div.social-small:after {
-    margin-left: 35px;
-  }
-}
-div.social-small.instagram:after {
-  font-family: 'Font Awesome 5 Brands';
-  font-weight: 400;
-  content: '\f16d';
-  padding-left: 13px;
-  line-height: 38px;
-}
-div.social-small.etsy:after {
-  font-family: 'Font Awesome 5 Brands';
-  font-weight: 400;
-  content: '\f2d7';
-  padding-left: 14px;
-  line-height: 38px;
-}
-div.social-small.email:after {
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 900;
-  content: '\f0e0';
-  padding-left: 12px;
-  line-height: 38px;
-}
-div.social-small.phone:after {
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 900;
-  content: '\f095';
-  padding-left: 12px;
-  line-height: 38px;
-}
+
 /*
 =====================
 COPYRIGHT

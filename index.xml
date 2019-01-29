@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tim Brier</title>
+    <title>Tim Brier Woodworking</title>
     <link>https://timbrier.com/</link>
-    <description>Recent content on Tim Brier</description>
+    <description>Recent content on Tim Brier Woodworking</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
     
 	<atom:link href="https://timbrier.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Candle Holder</title>
+      <link>https://timbrier.com/portfolio/candleholder/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://timbrier.com/portfolio/candleholder/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Toy Plane</title>
@@ -20,20 +29,20 @@
     </item>
     
     <item>
-      <title>Picture Frame</title>
-      <link>https://timbrier.com/portfolio/pictureframe/</link>
+      <title>Toy Train</title>
+      <link>https://timbrier.com/portfolio/train/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://timbrier.com/portfolio/pictureframe/</guid>
+      <guid>https://timbrier.com/portfolio/train/</guid>
       <description>&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Bed</title>
-      <link>https://timbrier.com/portfolio/bed/</link>
+      <title>Bath Board</title>
+      <link>https://timbrier.com/portfolio/bathboard/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://timbrier.com/portfolio/bed/</guid>
+      <guid>https://timbrier.com/portfolio/bathboard/</guid>
       <description>&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
@@ -47,11 +56,83 @@
     </item>
     
     <item>
+      <title>Picture Frame</title>
+      <link>https://timbrier.com/portfolio/pictureframe/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://timbrier.com/portfolio/pictureframe/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cutting Board</title>
+      <link>https://timbrier.com/portfolio/cuttingboard/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://timbrier.com/portfolio/cuttingboard/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Wine Stand</title>
+      <link>https://timbrier.com/portfolio/winestand/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://timbrier.com/portfolio/winestand/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Wine Display</title>
+      <link>https://timbrier.com/portfolio/winedisplay/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://timbrier.com/portfolio/winedisplay/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Bed</title>
+      <link>https://timbrier.com/portfolio/bed/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://timbrier.com/portfolio/bed/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Candle Holder</title>
+      <link>https://timbrier.com/portfolio/candleholder2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://timbrier.com/portfolio/candleholder2/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Garden Bench</title>
       <link>https://timbrier.com/portfolio/gardenbench/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://timbrier.com/portfolio/gardenbench/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Picture Frame</title>
+      <link>https://timbrier.com/portfolio/chunkypictureframe/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://timbrier.com/portfolio/chunkypictureframe/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Rattle</title>
+      <link>https://timbrier.com/portfolio/rattle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://timbrier.com/portfolio/rattle/</guid>
       <description>&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
