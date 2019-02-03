@@ -1,0 +1,185 @@
+<html>
+    <head>
+        <style type="text/css">
+            .lbl {
+                width: 200px;
+                display: inline-block;
+            }
+
+            .text-input {
+                width: 300px;
+            }
+
+            .margin-right {
+                margin-right: 20px;
+            }
+
+            .form-section {
+                page-break-inside: avoid;
+            }
+
+            .questions {
+                page-break-before: always;
+            }
+
+            .form-item {
+                margin-bottom: 5px;
+                display: flex;
+                align-items: center;
+            }
+
+            h2 {
+                margin-bottom: 5px;
+            }
+        </style>
+
+        <script type="text/javascript">
+            function addSection(text) {
+                var titleNode = document.createElement("h2");
+                titleNode.appendChild(document.createTextNode(text));
+
+                var divNode = document.createElement("div");
+                divNode.className += "form-section";
+                divNode.appendChild(titleNode);
+
+                document.getElementById("form").appendChild(divNode);
+                return divNode;
+            }
+
+            function createLabelledDiv(name, text) {
+                var labelNode = document.createElement("label");
+                labelNode.setAttribute("for", name);
+                labelNode.className += "lbl";
+                labelNode.appendChild(document.createTextNode(text));
+
+                var divNode = document.createElement("div");
+                divNode.className += "form-item";
+                divNode.appendChild(labelNode);
+                return divNode;
+            }
+
+            function addTextInput(sectionNode, name, text) {
+                var inputNode = document.createElement("input");
+                inputNode.setAttribute("type", "text");
+                inputNode.setAttribute("name", name);
+                inputNode.className += "text-input";
+
+                var divNode = createLabelledDiv(name, text);
+                divNode.appendChild(inputNode);
+
+                sectionNode.appendChild(divNode);
+            }
+
+            function addChecklistItem(sectionNode, name, text, options) {
+                var divNode = createLabelledDiv(name, text);
+
+                for (var i = 0; i < options.length; i++) {
+                    var textNode = document.createElement("span");
+                    textNode.appendChild(document.createTextNode(options[i]));
+                    
+                    var radioNode = document.createElement("input");
+                    radioNode.setAttribute("type", "radio");
+                    radioNode.setAttribute("name", name);
+                    radioNode.className += "margin-right";
+
+                    divNode.appendChild(textNode);
+                    divNode.appendChild(radioNode);
+                }
+
+                sectionNode.appendChild(divNode);
+            }
+
+            function addYesNoItem(sectionNode, name, text) {
+                addChecklistItem(sectionNode, name, text, ["Yes", "No"]);
+            }
+
+            function addCommonRoomChecks(sectionNode, room) {
+                addYesNoItem(sectionNode, room + "DampSigns", "Signs of damp");
+                addYesNoItem(sectionNode, room + "CeilingCracks", "Ceiling cracks");
+                addYesNoItem(sectionNode, room + "WallCracks", "Wall cracks");
+                addYesNoItem(sectionNode, room + "Radiators", "Radiators heating up");                
+                addYesNoItem(sectionNode, room + "DoubleGlazing", "Double glazing");
+                addYesNoItem(sectionNode, room + "Signal", "Phone signal");
+                addYesNoItem(sectionNode, room + "Lights", "Lights working");
+                addYesNoItem(sectionNode, room + "WindowsOpen", "Windows open");
+                addYesNoItem(sectionNode, room + "WindowsLock", "Windows lock");
+            }
+
+            window.onload = function() {
+                addTextInput(document.getElementById("form"), "propertyName", "Property name");
+                
+                var extFront = addSection("External front");
+                addYesNoItem(extFront, "offRoadParking", "Off road parking");
+                addChecklistItem(extFront, "frontDoorType", "Front door type", ["Wood", "PVC"]);
+                addTextInput(extFront, "frontRoof", "Front roof condition");
+                addTextInput(extFront, "frontWalls", "Front walls condition");
+                addTextInput(extFront, "chimney", "Chimney condition");
+                
+                var kitchen = addSection("Kitchen");
+                addYesNoItem(kitchen, "dishwasher", "Dishwasher");
+                addChecklistItem(kitchen, "hobType", "Hob type", ["Gas", "Electric"]);
+                addYesNoItem(kitchen, "hobWorks", "Hob works");
+                addChecklistItem(kitchen, "ovenType", "Oven type", ["Gas", "Electric"]);
+                addYesNoItem(kitchen, "ovenWorks", "Oven works");
+                addChecklistItem(kitchen, "kitchenSink", "Hot water kitchen sink", ["Yes", "No", "After a wait"]);
+                addYesNoItem(kitchen, "kitchenExtractor", "Kitchen extractor fan");
+                addTextInput(kitchen, "kitchenCabinets", "Kitchen cabinet condition")
+                addCommonRoomChecks(kitchen, "kitchen");
+
+                var livingRoom = addSection("Living room");
+                addYesNoItem(livingRoom, "fireplace", "Fireplace");
+                addCommonRoomChecks(livingRoom, "living");
+
+                var extBack = addSection("External back");
+                addChecklistItem(extBack, "backDoorType", "Back door type", ["Wood", "PVC"]);
+                addTextInput(extBack, "rearRoof", "Rear roof condition");
+                addTextInput(extBack, "rearWalls", "Rear walls condition");
+                addTextInput(extBack, "gardenSize", "Garden size");
+                addTextInput(extBack, "gardenDirection", "Garden direction");
+
+                var bathroom = addSection("Bathroom")
+                addChecklistItem(bathroom, "bathroomSink", "Hot water bathroom sink", ["Yes", "No", "After a wait"]);
+                addChecklistItem(bathroom, "shower", "Hot water shower", ["Yes", "No", "After a wait"]);
+                addYesNoItem(bathroom, "waterPressure", "Good water pressure while flushing");
+                addYesNoItem(bathroom, "bathroomExtractor", "Bathroom extractor fan");
+                addYesNoItem(bathroom, "shaverPlug", "Shaver plug");
+                addCommonRoomChecks(bathroom, "bathroom");
+
+                var bed1 = addSection("Bedroom 1");
+                addYesNoItem(bed1, "bed1Wardrobe", "Wardrobe");
+                addCommonRoomChecks(bed1, "bed1");
+
+                var bed2 = addSection("Bedroom 2");
+                addYesNoItem(bed2, "bed2Wardrobe", "Wardrobe");
+                addCommonRoomChecks(bed2, "bed2");
+
+                var bed3 = addSection("Bedroom 3");
+                addYesNoItem(bed3, "bed3Wardrobe", "Wardrobe");
+                addCommonRoomChecks(bed3, "bed3");
+
+                var attic = addSection("Attic");
+                addYesNoItem(attic, "atticExists", "Attic exists");
+                addYesNoItem(attic, "atticSeen", "Saw attic");
+                addYesNoItem(attic, "atticInsulated", "Attic insulated");
+                addYesNoItem(attic, "atticUsable", "Attic usable");
+
+                var questions = addSection("Questions");
+                questions.className += " questions";
+                addTextInput(questions, "saleReason", "Why is the house being sold")
+                addYesNoItem(questions, "burglerAlarm", "Burgler alarm");
+                addYesNoItem(questions, "smokeAlaram", "Smoke alarm");
+                addTextInput(questions, "boilerLocation", "Where is the boiler");
+                addTextInput(questions, "boilerAge", "How old is the boiler");
+                addTextInput(questions, "boilerInspection", "When was the boiler last inspected");
+                addTextInput(questions, "rewire", "When was the house last rewired");
+                addTextInput(questions, "neighbours", "Have you ever had issues with neighbours");
+                addChecklistItem(questions, "tenure", "Tenure", ["Freehold", "Leasehold"]);
+                addTextInput(questions, "groundRent", "If leasehold, what's the ground rent");
+            }
+        </script>
+    </head>
+    <body>
+        <form id="form">
+        </form>
+    </body>
+</html>
