@@ -1,0 +1,304 @@
+<html>
+    <head>
+        <script>
+            var canvasWidth = 200;
+            var canvasHeight = 100;
+
+            var scale = 5;
+
+            const minDimension = 50;
+            const maxDimension = 1000;
+            const minScale = 1;
+            const maxScale = 10;
+
+            var randomDensity = 0.2;
+            var frameTimeMs = 64;
+
+            const ON = 1;
+            const OFF = 0;
+            const DYING = 2;
+            const BORDER_STATE = OFF;
+
+            var numPixels = null;
+            var pixels = null;
+
+            let onPixelStyle = "rgba("+0+","+0+","+0+","+(255)+")";
+            let offPixelStyle = "rgba("+255+","+255+","+255+","+(255)+")";
+            let dyingPixelStyle = "rgba("+255+","+0+","+0+","+(255)+")";
+
+            let canvas = null;
+            let context = null;
+
+            let playingId = null;
+
+            function onLoad() {
+                document.getElementById("inputWidth").value = canvasWidth;
+                document.getElementById("inputHeight").value = canvasHeight;
+                document.getElementById("inputScale").value = scale;
+                document.getElementById("inputFrameTime").value = frameTimeMs;
+                document.getElementById("inputRandomDensity").value = randomDensity;
+
+                numPixels = canvasWidth * canvasHeight;
+                pixels = Array(numPixels);
+
+                canvas = document.getElementById("canvas");
+                context = canvas.getContext("2d");
+
+                canvas.setAttribute("width", canvasWidth);
+                canvas.setAttribute("height", canvasHeight);
+
+                canvas.style.width = `${scale * canvasWidth}px`;
+                canvas.style.height = `${scale * canvasHeight}px`;
+
+                for (let index = 0; index < numPixels; index++) {
+                    pixels[index] = new Pixel();
+                }
+
+                randomiseCanvas();
+            }
+
+            function render() {
+                for (let x = 0; x < canvasWidth; x++) {
+                    for (let y = 0; y < canvasHeight; y++) {
+                        const state = pixelAt(x, y);
+                        if (state === ON) {
+                            context.fillStyle = onPixelStyle;
+                        } else if (state === OFF) {
+                            context.fillStyle = offPixelStyle;
+                        } else if (state === DYING) {
+                            context.fillStyle = dyingPixelStyle;
+                        }
+                        context.fillRect(x, y, 1, 1);
+                    }
+                }
+            }
+
+            function pixelAt(x, y) {
+                if (x < 0 || x >= canvasWidth || y < 0 || y >= canvasHeight) {
+                    return BORDER_STATE;
+                }
+                return pixels[y * canvasWidth + x].activeState;
+            }
+
+            function setPixel(x, y, state, active=false) {
+                if (active) {
+                    pixels[y * canvasWidth + x].activeState = state;
+                } else {
+                    pixels[y * canvasWidth + x].nextState = state;
+                }
+            }
+
+            function randomiseCanvas() {
+                randomisePixels();
+                render();
+            }
+
+            function clearCanvas() {
+                clearPixels();
+                render();
+            }
+
+            function randomisePixels() {
+                for (let x = 0; x < canvasWidth; x++) {
+                    for (let y = 0; y < canvasHeight; y++) {
+                        if (Math.random() < randomDensity) {
+                            setPixel(x, y, ON, active=true);
+                        } else {
+                            setPixel(x, y, OFF, active=true);
+                        }
+                    }
+                }
+            }
+
+            function clearPixels() {
+                for (let x = 0; x < canvasWidth; x++) {
+                    for (let y = 0; y < canvasHeight; y++) {
+                        setPixel(x, y, OFF, active=true);
+                    }
+                }
+            }
+
+            function tick() {
+                for (let x = 0; x < canvasWidth; x++) {
+                    for (let y = 0; y < canvasHeight; y++) {
+                        cellTick(x, y);
+                    }
+                }
+                copyStates();
+                render();
+            }
+
+            function cellTick(x, y) {
+                const ruleset = document.getElementById("ruleset").value;
+                if (ruleset == "GAME_OF_LIFE") {
+                    gameOfLifeCellTick(x, y);
+                } else if (ruleset == "SEEDS") {
+                    seedsCellTick(x, y);
+                } else if (ruleset == "BRIANS_BRAIN") {
+                    brainsBrainCellTick(x, y);
+                }
+            }
+
+            function countNeighbours(x, y) {
+                var onCount = 0;
+                for (let neighbourX = x - 1; neighbourX <= x + 1; neighbourX++) {
+                    for (let neighbourY = y - 1; neighbourY <= y + 1; neighbourY++) {
+                        if (neighbourX == x && neighbourY == y) {
+                            continue;
+                        }
+                        const neighbourState = pixelAt(neighbourX, neighbourY);
+                        if (neighbourState == ON) {
+                            onCount ++;
+                        }
+                    }
+                }
+                return onCount;
+            }
+
+            function gameOfLifeCellTick(x, y) {
+                var onCount = countNeighbours(x, y);
+                const state = pixelAt(x, y);
+                if (state == ON && (onCount == 2 || onCount == 3)) {
+                    setPixel(x, y, ON);
+                } else if (state == OFF && onCount == 3) {
+                    setPixel(x, y, ON);
+                } else {
+                    setPixel(x, y, OFF);
+                }
+            }
+
+            function seedsCellTick(x, y) {
+                var onCount = countNeighbours(x, y);
+                if (pixelAt(x, y) == OFF && onCount == 2) {
+                    setPixel(x, y, ON);
+                } else {
+                    setPixel(x, y, OFF);
+                }
+            }
+
+            function brainsBrainCellTick(x, y) {
+                var onCount = countNeighbours(x, y);
+                const state = pixelAt(x, y);
+                if (state == OFF && onCount == 2) {
+                    setPixel(x, y, ON);
+                } else if (state == ON) {
+                    setPixel(x, y, DYING);
+                } else {
+                    setPixel(x, y, OFF);
+                }
+            }
+
+            function copyStates() {
+                pixels.forEach(pixel => {
+                    pixel.activeState = pixel.nextState;
+                });
+            }
+
+            function play() {
+                playingId = setInterval(tick, frameTimeMs);
+            }
+
+            function pause() {
+                clearInterval(playingId);
+            }
+
+            function togglePixel(event) {
+                const rect = canvas.getBoundingClientRect();
+                const scaleX = canvas.width / rect.width;
+                const scaleY = canvas.height / rect.height;
+                const x = Math.floor((event.clientX - rect.left) * scaleX);
+                const y = Math.floor((event.clientY - rect.top) * scaleY);
+                if (pixelAt(x, y) == ON) {
+                    setPixel(x, y, OFF, active=true);
+                } else {
+                    setPixel(x, y, ON, active=true);
+                }
+                render();
+            }
+
+            function setFrameTime(event) {
+                const parsed = parseFloat(event.target.value);
+                if (parsed >= 16 && parsed <= 1000) {
+                    frameTimeMs = parsed;
+                }
+            }
+
+            function setRandomDensity(event) {
+                const parsed = parseFloat(event.target.value);
+                if (parsed >= 0 && parsed <= 1) {
+                    randomDensity = parsed;
+                }
+            }
+
+            function resize() {
+                const providedWidth = parseInt(document.getElementById("inputWidth").value);
+                const providedHeight = parseInt(document.getElementById("inputHeight").value);
+                const providedScale = parseInt(document.getElementById("inputScale").value);
+                if (providedWidth < minDimension || providedWidth > maxDimension) {
+                    console.log(`Width must be between ${minDimension} and ${maxDimension}`);
+                    return;
+                }
+                if (providedHeight < minDimension || providedHeight > maxDimension) {
+                    console.log(`Height must be between ${minDimension} and ${maxDimension}`);
+                    return;
+                }
+                if (providedScale < minScale || providedScale > maxScale) {
+                    console.log(`Scale must be between ${minScale} and ${maxScale}`);
+                    return;
+                }
+                canvasWidth = providedWidth;
+                canvasHeight = providedHeight;
+                scale = providedScale;
+                onLoad();
+            }
+
+            class Pixel {
+                constructor() {
+                    this.activeState = OFF;
+                    this.nextState = OFF;
+                }
+            }
+        </script>
+
+        <style type="text/css">
+            canvas {
+                image-rendering: -webkit-crisp-edges;
+                image-rendering: -moz-crisp-edges;
+                image-rendering: pixelated;
+                image-rendering: crisp-edges;
+            }
+        </style>
+    </head>
+
+    <body onload="onLoad()">
+        <div>
+            <canvas id="canvas" onClick="togglePixel(event)">
+            </canvas>
+        </div>
+        <div>
+            <button onClick="randomiseCanvas()">Randomise</button>
+            <button onClick="clearCanvas()">Clear</button>
+            <button onClick="tick()">Tick</button>
+            <button onClick="play()">Play</button>
+            <button onClick="pause()">Pause</button>
+        </div>
+        <div>
+            <label>Frame time</label><input type="text" id="inputFrameTime" onInput="setFrameTime(event)">
+        </div>
+        <div>
+            <label>Random density</label><input type="text" id="inputRandomDensity" onInput="setRandomDensity(event)">
+        </div>
+        <label>Ruleset</label>
+        <select id="ruleset">
+              <option value="GAME_OF_LIFE">Game of Life</option>
+              <option value="SEEDS">Seeds</option>
+              <option value="BRIANS_BRAIN">Brain's Brain</option>
+        </select>
+        <div>
+            <label>Width</label><input type="text" id="inputWidth">
+            <label>Height</label><input type="text" id="inputHeight">
+            <label>Scale</label><input type="text" id="inputScale">
+            <button onClick="resize()">Resize</button>
+        </div>
+    </body>
+</html>
