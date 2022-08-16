@@ -1,26 +1,30 @@
 <html>
     <head>
         <script>
-            var canvasWidth = 200;
-            var canvasHeight = 100;
+            let canvasWidth = 200;
+            let canvasHeight = 100;
 
-            var scale = 5;
+            let scale = 5;
 
             const minDimension = 50;
             const maxDimension = 1000;
             const minScale = 1;
             const maxScale = 10;
 
-            var randomDensity = 0.2;
-            var frameTimeMs = 64;
+            let randomDensity = 0.2;
+            let frameTimeMs = 64;
+
+            let wolframRuleNumber = 110;
+            let wolframRuleMap = wolframRuleMapFor(wolframRuleNumber);
+            let simulatedRow = 1;
 
             const ON = 1;
             const OFF = 0;
             const DYING = 2;
             const BORDER_STATE = OFF;
 
-            var numPixels = null;
-            var pixels = null;
+            let numPixels = null;
+            let pixels = null;
 
             let onPixelStyle = "rgba("+0+","+0+","+0+","+(255)+")";
             let offPixelStyle = "rgba("+255+","+255+","+255+","+(255)+")";
@@ -37,6 +41,7 @@
                 document.getElementById("inputScale").value = scale;
                 document.getElementById("inputFrameTime").value = frameTimeMs;
                 document.getElementById("inputRandomDensity").value = randomDensity;
+                document.getElementById("inputWolframRuleNumber").value = wolframRuleNumber;
 
                 numPixels = canvasWidth * canvasHeight;
                 pixels = Array(numPixels);
@@ -78,6 +83,13 @@
                     return BORDER_STATE;
                 }
                 return pixels[y * canvasWidth + x].activeState;
+            }
+
+            function pixelBit(x, y) {
+                if (pixelAt(x, y) == ON) {
+                    return ON;
+                }
+                return OFF;
             }
 
             function setPixel(x, y, state, active=false) {
@@ -124,6 +136,7 @@
                         cellTick(x, y);
                     }
                 }
+                simulatedRow = (simulatedRow + 1) % canvasHeight;
                 copyStates();
                 render();
             }
@@ -136,11 +149,13 @@
                     seedsCellTick(x, y);
                 } else if (ruleset == "BRIANS_BRAIN") {
                     brainsBrainCellTick(x, y);
+                } else if (ruleset == "WOLFRAM_ELEMENTARY") {
+                    wolframElementaryCellTick(x, y);
                 }
             }
 
             function countNeighbours(x, y) {
-                var onCount = 0;
+                let onCount = 0;
                 for (let neighbourX = x - 1; neighbourX <= x + 1; neighbourX++) {
                     for (let neighbourY = y - 1; neighbourY <= y + 1; neighbourY++) {
                         if (neighbourX == x && neighbourY == y) {
@@ -156,7 +171,7 @@
             }
 
             function gameOfLifeCellTick(x, y) {
-                var onCount = countNeighbours(x, y);
+                let onCount = countNeighbours(x, y);
                 const state = pixelAt(x, y);
                 if (state == ON && (onCount == 2 || onCount == 3)) {
                     setPixel(x, y, ON);
@@ -168,7 +183,7 @@
             }
 
             function seedsCellTick(x, y) {
-                var onCount = countNeighbours(x, y);
+                let onCount = countNeighbours(x, y);
                 if (pixelAt(x, y) == OFF && onCount == 2) {
                     setPixel(x, y, ON);
                 } else {
@@ -177,7 +192,7 @@
             }
 
             function brainsBrainCellTick(x, y) {
-                var onCount = countNeighbours(x, y);
+                let onCount = countNeighbours(x, y);
                 const state = pixelAt(x, y);
                 if (state == OFF && onCount == 2) {
                     setPixel(x, y, ON);
@@ -186,6 +201,29 @@
                 } else {
                     setPixel(x, y, OFF);
                 }
+            }
+
+            function getPreviousWolframRowCode(x, y) {
+                let yToUse = y - 1;
+                if (yToUse < 0) {
+                    yToUse = canvasHeight - 1;
+                }
+                let previousXToUse = x - 1;
+                if (previousXToUse < 0) {
+                    previousXToUse = canvasWidth - 1;
+                }
+                let nextXToUse = (x + 1) % canvasWidth;
+                return `${pixelBit(previousXToUse, yToUse)}${pixelBit(x, yToUse)}${pixelBit(nextXToUse, yToUse)}`;
+            }
+
+            function wolframElementaryCellTick(x, y) {
+                if (y != simulatedRow) {
+                    setPixel(x, y, pixelAt(x, y));
+                    return;
+                }
+
+                let previousRowCode = getPreviousWolframRowCode(x, y);
+                setPixel(x, y, wolframRuleMap[previousRowCode]);
             }
 
             function copyStates() {
@@ -230,6 +268,15 @@
                 }
             }
 
+            function setWolframRuleNumber(event) {
+                console.log("Setting rule number")
+                const parsed = parseInt(event.target.value);
+                if (parsed >= 0 && parsed <= 255) {
+                    wolframRuleNumber = parsed;
+                    wolframRuleMap = wolframRuleMapFor(wolframRuleNumber);
+                }
+            }
+
             function resize() {
                 const providedWidth = parseInt(document.getElementById("inputWidth").value);
                 const providedHeight = parseInt(document.getElementById("inputHeight").value);
@@ -250,6 +297,20 @@
                 canvasHeight = providedHeight;
                 scale = providedScale;
                 onLoad();
+            }
+
+            function wolframRuleMapFor(ruleNumber) {
+                ruleNumberBinary = (ruleNumber >>> 0).toString(2).padStart(8, "0");;
+                return {
+                    "111": parseInt(ruleNumberBinary[0]),
+                    "110": parseInt(ruleNumberBinary[1]),
+                    "101": parseInt(ruleNumberBinary[2]),
+                    "100": parseInt(ruleNumberBinary[3]),
+                    "011": parseInt(ruleNumberBinary[4]),
+                    "010": parseInt(ruleNumberBinary[5]),
+                    "001": parseInt(ruleNumberBinary[6]),
+                    "000": parseInt(ruleNumberBinary[7])
+                }
             }
 
             class Pixel {
@@ -288,12 +349,16 @@
         <div>
             <label>Random density</label><input type="text" id="inputRandomDensity" onInput="setRandomDensity(event)">
         </div>
-        <label>Ruleset</label>
-        <select id="ruleset">
-              <option value="GAME_OF_LIFE">Game of Life</option>
-              <option value="SEEDS">Seeds</option>
-              <option value="BRIANS_BRAIN">Brain's Brain</option>
-        </select>
+        <div>
+            <label>Ruleset</label>
+            <select id="ruleset">
+                  <option value="GAME_OF_LIFE">Game of Life</option>
+                  <option value="SEEDS">Seeds</option>
+                  <option value="BRIANS_BRAIN">Brain's Brain</option>
+                  <option value="WOLFRAM_ELEMENTARY">Wolfram Elementary</option>
+            </select>
+            <label>Wolfram rule number</label><input type="text" id="inputWolframRuleNumber" onInput="setWolframRuleNumber(event)">
+        </div>
         <div>
             <label>Width</label><input type="text" id="inputWidth">
             <label>Height</label><input type="text" id="inputHeight">
