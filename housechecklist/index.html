@@ -107,6 +107,7 @@
                 addYesNoItem(sectionNode, room + "Lights", "Lights working");
                 addYesNoItem(sectionNode, room + "WindowsOpen", "Windows open");
                 addYesNoItem(sectionNode, room + "WindowsLock", "Windows lock");
+                addYesNoItem(sectionNode, room + "WiringOkay", "Wiring okay");
             }
 
             window.onload = function() {
@@ -161,11 +162,23 @@
                 addYesNoItem(bed3, "bed3Wardrobe", "Wardrobe");
                 addCommonRoomChecks(bed3, "bed3");
 
+                var bed4 = addSection("Bedroom 4");
+                addYesNoItem(bed4, "bed4Wardrobe", "Wardrobe");
+                addCommonRoomChecks(bed4, "bed4");
+
                 var attic = addSection("Attic");
                 addYesNoItem(attic, "atticExists", "Attic exists");
                 addYesNoItem(attic, "atticSeen", "Saw attic");
                 addYesNoItem(attic, "atticInsulated", "Attic insulated");
                 addYesNoItem(attic, "atticUsable", "Attic usable");
+
+                var workshop = addSection("Workshop")
+                addChecklistItem(workshop, "workshopType", "Workshop type", ["Shed", "Garage"]);
+                addChecklistItem(workshop, "workshopPosition", "Workshop position", ["Attached", "Detached"]);
+                addYesNoItem(workshop, "workshopLighting", "Has lighting");
+                addYesNoItem(workshop, "workshopPower", "Has power");
+                addYesNoItem(workshop, "workshopSuitable", "Would it be suitable for a workshop long term");
+
 
                 var questions = addSection("Questions");
                 questions.className += " questions";
@@ -178,7 +191,9 @@
                 addTextInput(questions, "rewire", "When was the house last rewired");
                 addTextInput(questions, "neighbours", "Have you ever had issues with neighbours");
                 addChecklistItem(questions, "tenure", "Tenure", ["Freehold", "Leasehold"]);
+                addTextInput(questions, "leaseLength", "If leasehold, how long is left on the lease");
                 addTextInput(questions, "groundRent", "If leasehold, what's the ground rent");
+                addYesNoItem(questions, "groundRentGuarantee", "If leasehold, is the ground rent guaranteed to stay the same");
             }
         </script>
     </head>
