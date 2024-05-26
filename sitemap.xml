@@ -1,101 +1,47 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
-    <loc>https://timbrier.com/portfolio/candleholder/</loc>
+    <loc>https://timsummertonbrier.co.uk/portfolio/candleholder/</loc>
+  </url><url>
+    <loc>https://timsummertonbrier.co.uk/portfolio/toyplane/</loc>
+  </url><url>
+    <loc>https://timsummertonbrier.co.uk/portfolio/train/</loc>
+  </url><url>
+    <loc>https://timsummertonbrier.co.uk/portfolio/bathboard/</loc>
+  </url><url>
+    <loc>https://timsummertonbrier.co.uk/portfolio/cutlerytray/</loc>
+  </url><url>
+    <loc>https://timsummertonbrier.co.uk/portfolio/pictureframe/</loc>
+  </url><url>
+    <loc>https://timsummertonbrier.co.uk/portfolio/cuttingboard/</loc>
+  </url><url>
+    <loc>https://timsummertonbrier.co.uk/portfolio/winestand/</loc>
+  </url><url>
+    <loc>https://timsummertonbrier.co.uk/portfolio/winedisplay/</loc>
+  </url><url>
+    <loc>https://timsummertonbrier.co.uk/portfolio/bed/</loc>
+  </url><url>
+    <loc>https://timsummertonbrier.co.uk/portfolio/candleholder2/</loc>
+  </url><url>
+    <loc>https://timsummertonbrier.co.uk/categories/</loc>
+  </url><url>
+    <loc>https://timsummertonbrier.co.uk/portfolio/gardenbench/</loc>
+  </url><url>
+    <loc>https://timsummertonbrier.co.uk/portfolio/chunkypictureframe/</loc>
+  </url><url>
+    <loc>https://timsummertonbrier.co.uk/portfolio/</loc>
+  </url><url>
+    <loc>https://timsummertonbrier.co.uk/portfolio/rattle/</loc>
+  </url><url>
+    <loc>https://timsummertonbrier.co.uk/portfolio/spicerack/</loc>
+  </url><url>
+    <loc>https://timsummertonbrier.co.uk/portfolio/table/</loc>
+  </url><url>
+    <loc>https://timsummertonbrier.co.uk/tags/</loc>
+  </url><url>
+    <loc>https://timsummertonbrier.co.uk/</loc>
+  </url><url>
+    <loc>https://timsummertonbrier.co.uk/portfolio/toycar/</loc>
   </url>
-  
-  <url>
-    <loc>https://timbrier.com/portfolio/toyplane/</loc>
-  </url>
-  
-  <url>
-    <loc>https://timbrier.com/portfolio/train/</loc>
-  </url>
-  
-  <url>
-    <loc>https://timbrier.com/portfolio/bathboard/</loc>
-  </url>
-  
-  <url>
-    <loc>https://timbrier.com/portfolio/cutlerytray/</loc>
-  </url>
-  
-  <url>
-    <loc>https://timbrier.com/portfolio/pictureframe/</loc>
-  </url>
-  
-  <url>
-    <loc>https://timbrier.com/portfolio/cuttingboard/</loc>
-  </url>
-  
-  <url>
-    <loc>https://timbrier.com/portfolio/winestand/</loc>
-  </url>
-  
-  <url>
-    <loc>https://timbrier.com/portfolio/winedisplay/</loc>
-  </url>
-  
-  <url>
-    <loc>https://timbrier.com/portfolio/bed/</loc>
-  </url>
-  
-  <url>
-    <loc>https://timbrier.com/portfolio/candleholder2/</loc>
-  </url>
-  
-  <url>
-    <loc>https://timbrier.com/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://timbrier.com/contact/</loc>
-  </url>
-  
-  <url>
-    <loc>https://timbrier.com/portfolio/gardenbench/</loc>
-  </url>
-  
-  <url>
-    <loc>https://timbrier.com/portfolio/chunkypictureframe/</loc>
-  </url>
-  
-  <url>
-    <loc>https://timbrier.com/portfolio/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://timbrier.com/portfolio/rattle/</loc>
-  </url>
-  
-  <url>
-    <loc>https://timbrier.com/portfolio/spicerack/</loc>
-  </url>
-  
-  <url>
-    <loc>https://timbrier.com/portfolio/table/</loc>
-  </url>
-  
-  <url>
-    <loc>https://timbrier.com/tags/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://timbrier.com/testimonials/</loc>
-  </url>
-  
-  <url>
-    <loc>https://timbrier.com/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://timbrier.com/portfolio/toycar/</loc>
-  </url>
-  
 </urlset>

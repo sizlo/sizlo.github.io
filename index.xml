@@ -1,167 +1,130 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tim Brier Woodworking</title>
-    <link>https://timbrier.com/</link>
-    <description>Recent content on Tim Brier Woodworking</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Tim Summerton-Brier Woodworking</title>
+    <link>https://timsummertonbrier.co.uk/</link>
+    <description>Recent content on Tim Summerton-Brier Woodworking</description>
+    <generator>Hugo</generator>
     <language>en-uk</language>
-    
-	<atom:link href="https://timbrier.com/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="https://timsummertonbrier.co.uk/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Candle Holder</title>
-      <link>https://timbrier.com/portfolio/candleholder/</link>
+      <link>https://timsummertonbrier.co.uk/portfolio/candleholder/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://timbrier.com/portfolio/candleholder/</guid>
-      <description>&lt;p&gt;&lt;/p&gt;</description>
+      <guid>https://timsummertonbrier.co.uk/portfolio/candleholder/</guid>
+      <description></description>
     </item>
-    
     <item>
       <title>Toy Plane</title>
-      <link>https://timbrier.com/portfolio/toyplane/</link>
+      <link>https://timsummertonbrier.co.uk/portfolio/toyplane/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://timbrier.com/portfolio/toyplane/</guid>
-      <description>&lt;p&gt;&lt;/p&gt;</description>
+      <guid>https://timsummertonbrier.co.uk/portfolio/toyplane/</guid>
+      <description></description>
     </item>
-    
     <item>
       <title>Toy Train</title>
-      <link>https://timbrier.com/portfolio/train/</link>
+      <link>https://timsummertonbrier.co.uk/portfolio/train/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://timbrier.com/portfolio/train/</guid>
-      <description>&lt;p&gt;&lt;/p&gt;</description>
+      <guid>https://timsummertonbrier.co.uk/portfolio/train/</guid>
+      <description></description>
     </item>
-    
     <item>
       <title>Bath Board</title>
-      <link>https://timbrier.com/portfolio/bathboard/</link>
+      <link>https://timsummertonbrier.co.uk/portfolio/bathboard/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://timbrier.com/portfolio/bathboard/</guid>
-      <description>&lt;p&gt;&lt;/p&gt;</description>
+      <guid>https://timsummertonbrier.co.uk/portfolio/bathboard/</guid>
+      <description></description>
     </item>
-    
     <item>
       <title>Cutlery Tray</title>
-      <link>https://timbrier.com/portfolio/cutlerytray/</link>
+      <link>https://timsummertonbrier.co.uk/portfolio/cutlerytray/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://timbrier.com/portfolio/cutlerytray/</guid>
-      <description>&lt;p&gt;&lt;/p&gt;</description>
+      <guid>https://timsummertonbrier.co.uk/portfolio/cutlerytray/</guid>
+      <description></description>
     </item>
-    
     <item>
       <title>Picture Frame</title>
-      <link>https://timbrier.com/portfolio/pictureframe/</link>
+      <link>https://timsummertonbrier.co.uk/portfolio/pictureframe/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://timbrier.com/portfolio/pictureframe/</guid>
-      <description>&lt;p&gt;&lt;/p&gt;</description>
+      <guid>https://timsummertonbrier.co.uk/portfolio/pictureframe/</guid>
+      <description></description>
     </item>
-    
     <item>
       <title>Cutting Board</title>
-      <link>https://timbrier.com/portfolio/cuttingboard/</link>
+      <link>https://timsummertonbrier.co.uk/portfolio/cuttingboard/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://timbrier.com/portfolio/cuttingboard/</guid>
-      <description>&lt;p&gt;&lt;/p&gt;</description>
+      <guid>https://timsummertonbrier.co.uk/portfolio/cuttingboard/</guid>
+      <description></description>
     </item>
-    
     <item>
       <title>Wine Stand</title>
-      <link>https://timbrier.com/portfolio/winestand/</link>
+      <link>https://timsummertonbrier.co.uk/portfolio/winestand/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://timbrier.com/portfolio/winestand/</guid>
-      <description>&lt;p&gt;&lt;/p&gt;</description>
+      <guid>https://timsummertonbrier.co.uk/portfolio/winestand/</guid>
+      <description></description>
     </item>
-    
     <item>
       <title>Wine Display</title>
-      <link>https://timbrier.com/portfolio/winedisplay/</link>
+      <link>https://timsummertonbrier.co.uk/portfolio/winedisplay/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://timbrier.com/portfolio/winedisplay/</guid>
-      <description>&lt;p&gt;&lt;/p&gt;</description>
+      <guid>https://timsummertonbrier.co.uk/portfolio/winedisplay/</guid>
+      <description></description>
     </item>
-    
     <item>
       <title>Bed</title>
-      <link>https://timbrier.com/portfolio/bed/</link>
+      <link>https://timsummertonbrier.co.uk/portfolio/bed/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://timbrier.com/portfolio/bed/</guid>
-      <description>&lt;p&gt;&lt;/p&gt;</description>
+      <guid>https://timsummertonbrier.co.uk/portfolio/bed/</guid>
+      <description></description>
     </item>
-    
     <item>
       <title>Candle Holder</title>
-      <link>https://timbrier.com/portfolio/candleholder2/</link>
+      <link>https://timsummertonbrier.co.uk/portfolio/candleholder2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://timbrier.com/portfolio/candleholder2/</guid>
-      <description>&lt;p&gt;&lt;/p&gt;</description>
+      <guid>https://timsummertonbrier.co.uk/portfolio/candleholder2/</guid>
+      <description></description>
     </item>
-    
     <item>
       <title>Garden Bench</title>
-      <link>https://timbrier.com/portfolio/gardenbench/</link>
+      <link>https://timsummertonbrier.co.uk/portfolio/gardenbench/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://timbrier.com/portfolio/gardenbench/</guid>
-      <description>&lt;p&gt;&lt;/p&gt;</description>
+      <guid>https://timsummertonbrier.co.uk/portfolio/gardenbench/</guid>
+      <description></description>
     </item>
-    
     <item>
       <title>Picture Frame</title>
-      <link>https://timbrier.com/portfolio/chunkypictureframe/</link>
+      <link>https://timsummertonbrier.co.uk/portfolio/chunkypictureframe/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://timbrier.com/portfolio/chunkypictureframe/</guid>
-      <description>&lt;p&gt;&lt;/p&gt;</description>
+      <guid>https://timsummertonbrier.co.uk/portfolio/chunkypictureframe/</guid>
+      <description></description>
     </item>
-    
     <item>
       <title>Rattle</title>
-      <link>https://timbrier.com/portfolio/rattle/</link>
+      <link>https://timsummertonbrier.co.uk/portfolio/rattle/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://timbrier.com/portfolio/rattle/</guid>
-      <description>&lt;p&gt;&lt;/p&gt;</description>
+      <guid>https://timsummertonbrier.co.uk/portfolio/rattle/</guid>
+      <description></description>
     </item>
-    
     <item>
       <title>Spice Rack</title>
-      <link>https://timbrier.com/portfolio/spicerack/</link>
+      <link>https://timsummertonbrier.co.uk/portfolio/spicerack/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://timbrier.com/portfolio/spicerack/</guid>
-      <description>&lt;p&gt;&lt;/p&gt;</description>
+      <guid>https://timsummertonbrier.co.uk/portfolio/spicerack/</guid>
+      <description></description>
     </item>
-    
     <item>
       <title>Table</title>
-      <link>https://timbrier.com/portfolio/table/</link>
+      <link>https://timsummertonbrier.co.uk/portfolio/table/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://timbrier.com/portfolio/table/</guid>
-      <description>&lt;p&gt;&lt;/p&gt;</description>
+      <guid>https://timsummertonbrier.co.uk/portfolio/table/</guid>
+      <description></description>
     </item>
-    
     <item>
       <title>Toy car</title>
-      <link>https://timbrier.com/portfolio/toycar/</link>
+      <link>https://timsummertonbrier.co.uk/portfolio/toycar/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://timbrier.com/portfolio/toycar/</guid>
-      <description>&lt;p&gt;&lt;/p&gt;</description>
+      <guid>https://timsummertonbrier.co.uk/portfolio/toycar/</guid>
+      <description></description>
     </item>
-    
   </channel>
 </rss>
